@@ -3,6 +3,7 @@
 import {
   Briefcase01,
   Dataflow04,
+  File07,
   Settings02,
   Users01,
 } from "@untitled-ui/icons-react";
@@ -42,6 +43,12 @@ export const Sidebar = () => {
       </div>
       <div className="flex flex-1 flex-col justify-between">
         <div className="mt-9 flex flex-col gap-6 px-2">
+          <SidebarItem
+            isActive={pathname?.includes("/manage/commission")}
+            title="Commission"
+            icon={<File07 width={20} height={20} />}
+            href="/manage/commission"
+          />
           <SidebarItem
             isActive={pathname?.includes("/manage/agencies")}
             title="Agencies"
