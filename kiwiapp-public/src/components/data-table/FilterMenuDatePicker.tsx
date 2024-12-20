@@ -7,7 +7,6 @@ import {
   PopoverTrigger,
 } from "@/components/common/Popover";
 import { Calendar as CalendarIcon } from "@untitled-ui/icons-react";
-import { SelectSingleEventHandler } from "react-day-picker";
 import { format } from "date-fns";
 import { Dispatch, SetStateAction, useCallback, useState } from "react";
 
