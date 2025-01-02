@@ -5,6 +5,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/common/DropdownMenu";
 import FilterMenuDatePicker from "@/components/data-table/FilterMenuDatePicker";
+import SelectDropdownMultiple from "@/components/select/SelectDropdownMultiple";
 import { FilterLines } from "@untitled-ui/icons-react";
 import { useState } from "react";
 
@@ -55,6 +56,17 @@ export default function FilterMenu() {
         </div>
         <div>
           <div className="mb-2">Carriers</div>
+          <SelectDropdownMultiple
+            placeholder="woo"
+            selectedValue={["blah", "woo"]}
+            options={[
+              { label: "Blah", value: "blah" },
+              { label: "Woo Woo Woo", value: "woo" },
+              { label: "Yar", value: "yar yar yar" },
+            ]}
+            onSelectedOptionChange={() => undefined}
+            onSelectedOptionClear={() => undefined}
+          />
         </div>
       </DropdownMenuContent>
     </DropdownMenu>

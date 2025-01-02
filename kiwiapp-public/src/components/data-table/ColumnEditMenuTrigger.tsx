@@ -3,7 +3,6 @@ import { Table } from "@tanstack/react-table";
 import { Edit02 } from "@untitled-ui/icons-react";
 import { ComponentProps } from "react";
 import { DropdownMenuTrigger } from "@/components/common/DropdownMenu";
-import clsx from "clsx";
 
 interface TriggerButtonProps<A> extends ComponentProps<typeof Button> {
   table: Table<A>;
