@@ -1,0 +1,11 @@
+﻿CARRIER,MBI,MEMBER_ID,Member Name,Agent Name,Agent NPN,Plan Name,Plan ID,Effective Date,Disenrollment Date,Enrollment Type,Commission Period,Commission Paid Date,Commission Amount Total,Commission Compensation Type,Commission Agent Amount,Commission Agency 1,Commission Agency 1 Amount,Commission Agency 2,Commission Agency 2 Amount
+Aetna,7K08JE2EA59,135600955,"SMITH, JOHN","WALTON, GEORGE",1234567,Aetna Medicare Sound Advantage (HMO-POS),H1234-567-0,1/1/24,,Initial,4/1/24,3/15/24,10.42,Paid to Agent,10.42,,,,
+Aetna,7K08JE2EA59,129673947,"SMITH, JOHN","WALTON, GEORGE",1234567,Aetna Medicare Sound Advantage (HMO-POS),H1234-567-0,1/1/23,,Renewal,4/1/24,3/15/24,10.42,Administration Fee,0,Agency 1 Name,5.12,Agency 2 Name,5.3
+Humana,2QX1W94PC90,133227995,"SMITH, JOHN","WALTON, GEORGE",1234567,Humana Gold Plus (HMO),H1234-567-0,5/1/22,,Renewal,4/1/24,3/15/24,10.42,Paid to Agent,10.42,,,,
+Humana,3CC7GF6RK47,138006555,"SMITH, JOHN","WALTON, GEORGE",1234567,HumanaChoice (PPO),H1234-567-0,6/1/21,5/1/24,Renewal,4/1/24,3/15/24,10.42,Paid to Agent,10.42,,,,
+Healthfirst,2AW8W90TD28,137599387,"SMITH, JOHN","WALTON, GEORGE",1234567,Healthfirst Life Improvement Plan (HMO SNP),H1234-567-0,2/1/24,6/1/24,Initial,4/1/24,3/15/24,10.42,Administration Fee,0,Agency 1 Name,5.12,Agency 2 Name,5.3
+Aetna,6MN3QC6VE72,139578267,"SMITH, JOHN","WALTON, GEORGE",1234567,Aetna Medicare Extra Value (HMO),H1234-567-0,9/1/22,3/1/24,Renewal,4/1/24,3/15/24,10.42,Administration Fee,0,Agency 1 Name,5.12,Agency 2 Name,5.3
+Aetna,6MN3QC6VE72,137699867,"SMITH, JOHN","WALTON, GEORGE",1234567,Aetna Medicare Extra Value (HMO),H1234-567-0,10/1/24,,Initial,4/1/24,3/15/24,10.42,Administration Fee,0,Agency 1 Name,5.12,Agency 2 Name,5.3
+Aetna,8M69J36XN15,129672795,"SMITH, JOHN","WALTON, GEORGE",1234567,Aetna Medicare Extra Value (HMO),H1234-567-0,2/1/21,,Renewal,4/1/24,3/15/24,10.42,Administration Fee,0,Agency 1 Name,5.12,Agency 2 Name,5.3
+Healthfirst,2HM2JX6WP19,137116379,"SMITH, JOHN","WALTON, GEORGE",1234567,Healthfirst Life Improvement Plan (HMO SNP),H1234-567-0,1/1/21,,Renewal,4/1/24,3/15/24,10.42,Administration Fee,0,Agency 1 Name,5.12,Agency 2 Name,5.3
+Healthfirst,1AA5DN3TX67,136775995,"SMITH, JOHN","WALTON, GEORGE",1234567,Healthfirst Life Improvement Plan (HMO SNP),H1234-567-0,9/1/20,,Renewal,4/1/24,3/15/24,10.42,Administration Fee,0,Agency 1 Name,5.12,Agency 2 Name,5.3
