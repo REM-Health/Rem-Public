@@ -3,8 +3,10 @@
 import {
   Briefcase01,
   Dataflow04,
+  File07,
   Settings02,
   Users01,
+  PieChart03,
 } from "@untitled-ui/icons-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -17,12 +19,12 @@ export const Sidebar = () => {
 
   return (
     <aside
-      className={`fixed left-0 top-0 h-screen min-w-[15%] bg-evergreen-800 text-beige transition-transform
+      className={`fixed left-0 top-0 h-screen bg-evergreen-800 text-beige transition-transform
         ${
           collapsed
             ? "w-16 -translate-x-full transform"
             : "w-64 translate-x-0 transform"
-        } relative z-[202] flex flex-col
+        } z-[202] flex flex-col
         overflow-y-auto border-r border-divider bg-background py-6`}
     >
       {collapsed ? (
@@ -42,6 +44,18 @@ export const Sidebar = () => {
       </div>
       <div className="flex flex-1 flex-col justify-between">
         <div className="mt-9 flex flex-col gap-6 px-2">
+          <SidebarItem
+            isActive={pathname?.includes("/manage/overview")}
+            title="Overview"
+            icon={<PieChart03 width={20} height={20} />}
+            href="/manage/overview"
+          />
+          <SidebarItem
+            isActive={pathname?.includes("/manage/commission")}
+            title="Commission"
+            icon={<File07 width={20} height={20} />}
+            href="/manage/commission"
+          />
           <SidebarItem
             isActive={pathname?.includes("/manage/agencies")}
             title="Agencies"

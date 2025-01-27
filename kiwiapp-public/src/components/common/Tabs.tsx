@@ -14,7 +14,7 @@ const TabsList = React.forwardRef<
     ref={ref}
     className={cn(
       "flex border-b border-transparent", // Flexbox to align tabs horizontally
-      className,
+      className
     )}
     {...props}
   />
@@ -28,13 +28,13 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "relative px-6 py-4 text-xl font-medium transition-colors", // Padding, font size, and smooth transition
+      "relative px-4 py-3 text-xl font-medium transition-colors", // Padding, font size, and smooth transition
       "text-gray-500 hover:text-gray-600", // Inactive tab text color
       "data-[state=active]:text-gray-800", // Active tab text color
       `data-[state=active]:after:absolute data-[state=active]:after:bottom-0 data-[state=active]:after:left-0
-      data-[state=active]:after:right-0 data-[state=active]:after:h-1 data-[state=active]:after:bg-green-500
+      data-[state=active]:after:right-0 data-[state=active]:after:h-1 data-[state=active]:after:bg-green-400
       data-[state=active]:after:content-['']`, // Active tab underline style
-      className,
+      className
     )}
     {...props}
   />
@@ -44,7 +44,9 @@ TabsTrigger.displayName = TabsPrimitive.Trigger.displayName;
 const TabsContent = React.forwardRef<
   React.ElementRef<typeof TabsPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
->(({ className, ...props }, ref) => <TabsPrimitive.Content ref={ref} className={className} {...props} />);
+>(({ className, ...props }, ref) => (
+  <TabsPrimitive.Content ref={ref} className={className} {...props} />
+));
 TabsContent.displayName = TabsPrimitive.Content.displayName;
 
 const TAB_SEARCH_PARAM = "tab";

@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* shadcn/ui CSS Variables */
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #1a1a1a;
+    --muted: #f2f2f2;
+    --muted-foreground: #757575;
+    --popover: #ffffff;
+    --popover-foreground: #1a1a1a;
+    --border: #e6e6e6;
+    --input: #e6e6e6;
+    --card: #ffffff;
+    --card-foreground: #1a1a1a;
+    --primary: #1a1a1a;
+    --primary-foreground: #f9f9f9;
+    --secondary: #f2f2f2;
+    --secondary-foreground: #1a1a1a;
+    --accent: #f2f2f2;
+    --accent-foreground: #1a1a1a;
+    --destructive: #ff0000;
+    --destructive-foreground: #f9f9f9;
+    --ring: #cccccc;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #1a1a1a;
+    --foreground: #e6e6e6;
+    --muted: #2e2e2e;
+    --muted-foreground: #8c8c8c;
+    --accent: #2b2b2b;
+    --accent-foreground: #f9f9f9;
+    --popover: #1a1a1a;
+    --popover-foreground: #cccccc;
+    --border: #2b2b2b;
+    --input: #2b2b2b;
+    --card: #1a1a1a;
+    --card-foreground: #e6e6e6;
+    --primary: #f9f9f9;
+    --primary-foreground: #171717;
+    --secondary: #292929;
+    --secondary-foreground: #f9f9f9;
+    --destructive: #ff3333;
+    --destructive-foreground: #f9f9f9;
+    --ring: #2b2b2b;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}

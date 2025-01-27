@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div className="flex h-full w-full flex-col">
+    <div className="flex h-full w-full flex-col ml-64">
       <div className="px-8 py-6 font-header text-3xl text-evergreen-800">
         Agencies
       </div>

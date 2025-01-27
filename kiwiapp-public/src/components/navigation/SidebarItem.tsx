@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const SidebarItem = ({ icon, title, isActive, href = "" }: Props) => {
-  const { collapsed, setCollapsed, setCurrentSection } = useSidebarContext();
+  const { setCurrentSection } = useSidebarContext();
 
   useEffect(() => {
     if (isActive) {
@@ -32,13 +32,15 @@ export const SidebarItem = ({ icon, title, isActive, href = "" }: Props) => {
             ? "bg-evergreen-600 [&_svg_path]:stroke-green-400"
             : "group hover:bg-mintly hover:text-evergreen-800",
           `flex h-full min-h-[44px] w-full cursor-pointer items-center gap-2 rounded-xl px-3.5 transition-all duration-0
-          active:scale-[0.98]`
+          active:scale-[0.98]`,
         )}
       >
         {icon}
         <span
           className={clsx(
-            isActive ? "text-beige" : "text-gray group-hover:text-evergreen-800"
+            isActive
+              ? "text-beige"
+              : "text-gray group-hover:text-evergreen-800",
           )}
         >
           {title}

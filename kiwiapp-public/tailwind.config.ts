@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindAnimate from "tailwindcss-animate";
 
 const config: Config = {
   content: [
@@ -83,6 +84,47 @@ const config: Config = {
         plum: "#872B58",
         beige: "#F0EEEA",
         sunset: "#EA8F58",
+
+        // shadcn-ui Tailwind Configuration
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        // TODO Determine if there are better defaults to use here
+        // primary: {
+        //   DEFAULT: "hsl(var(--primary))",
+        //   foreground: "hsl(var(--primary-foreground))",
+        // },
+        secondary: {
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
+        },
+        destructive: {
+          DEFAULT: "var(--destructive)",
+          foreground: "var(--destructive-foreground)",
+        },
+        muted: {
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
+        },
+        accent: {
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
+        },
+        popover: {
+          DEFAULT: "var(--popover)",
+          foreground: "var(--popover-foreground)",
+        },
+        card: {
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
+        },
+      },
+      borderRadius: {
+        lg: `var(--radius)`,
+        md: `calc(var(--radius) - 2px)`,
+        sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
         sans: ["General Sans", "sans-serif"],
@@ -90,6 +132,7 @@ const config: Config = {
       },
     },
   },
+  plugins: [tailwindAnimate],
 };
 
 export default config;
