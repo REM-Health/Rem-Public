@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  Briefcase01,
-  Dataflow04,
-  Settings02,
-  Users01,
-} from "@untitled-ui/icons-react";
+import { Briefcase01, Dataflow04, Settings02, Users01 } from "@untitled-ui/icons-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useSidebarContext } from "./SidebarContext";
@@ -17,13 +12,9 @@ export const Sidebar = () => {
 
   return (
     <aside
-      className={`fixed left-0 top-0 h-screen min-w-[15%] bg-evergreen-800 text-beige transition-transform
-        ${
-          collapsed
-            ? "w-16 -translate-x-full transform"
-            : "w-64 translate-x-0 transform"
-        } relative z-[202] flex flex-col
-        overflow-y-auto border-r border-divider bg-background py-6`}
+      className={`fixed left-0 top-0 h-screen min-w-[15%] bg-evergreen-800 text-beige transition-transform ${
+        collapsed ? "w-16 -translate-x-full transform" : "w-64 translate-x-0 transform" } border-divider bg-background relative
+        z-[202] flex flex-col overflow-y-auto border-r py-6`}
     >
       {collapsed ? (
         <div
@@ -32,12 +23,7 @@ export const Sidebar = () => {
         />
       ) : null}
       <div className="mx-4 mb-4 mt-0 flex items-center justify-between">
-        <Image
-          src="/assets/images/logo-no-rem.svg"
-          alt="Logo"
-          width={48}
-          height={48}
-        />
+        <Image src="/assets/images/logo-no-rem.svg" alt="Logo" width={48} height={48} />
         {/* TODO(zhongxia.zhou): Enable sidebar open / collapse. */}
       </div>
       <div className="flex flex-1 flex-col justify-between">

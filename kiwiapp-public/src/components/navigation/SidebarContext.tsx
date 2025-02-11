@@ -19,13 +19,10 @@ export const SidebarProvider = ({ children }: { children: ReactNode }) => {
   const [currentSection, setCurrentSectionState] = useState("");
 
   const setCollapsed = () => setCollapsedState(!collapsed);
-  const setCurrentSection = (section: string) =>
-    setCurrentSectionState(section);
+  const setCurrentSection = (section: string) => setCurrentSectionState(section);
 
   return (
-    <SidebarContext.Provider
-      value={{ collapsed, setCollapsed, currentSection, setCurrentSection }}
-    >
+    <SidebarContext.Provider value={{ collapsed, setCollapsed, currentSection, setCurrentSection }}>
       {children}
     </SidebarContext.Provider>
   );
