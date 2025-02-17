@@ -1,8 +1,9 @@
 "use client";
 
-import { Sidebar } from "@/components/navigation/Sidebar";
-import { SidebarProvider } from "@/components/navigation/SidebarContext";
+// import { useState } from "react";
 import { Providers } from "@/components/provider/Providers";
+import { SidebarProvider } from "@/components/navigation/SidebarContext";
+import { Sidebar } from "@/components/navigation/Sidebar";
 import "@/styles/globals.css";
 
 export default function Layout({
@@ -16,9 +17,9 @@ export default function Layout({
       <body className="bg-beige">
         <Providers>
           <SidebarProvider>
-            <div className="h-min-screen flex overflow-hidden bg-beige">
+            <div className="h-min-screen bg-beige flex overflow-hidden">
               <Sidebar />
-              <div className={"flex flex-1 flex-col bg-beige transition-all duration-300"}>
+              <div className={"bg-beige flex flex-1 flex-col transition-all duration-300"}>
                 <main className="flex h-full w-full flex-1">{children}</main>
               </div>
             </div>

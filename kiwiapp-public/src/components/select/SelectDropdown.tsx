@@ -51,7 +51,7 @@ const SelectDropdown = <T,>({
           className={clsx(
             "w-full rounded-lg border border-gray-300 py-1.5 pl-3 pr-8 text-lg",
             "focus:border-evergreen-800 focus:outline-none focus:ring-0",
-            query !== "" || selectedValue !== undefined ? "text-evergreen-800" : "text-neutral-200",
+            query !== "" || selectedValue !== undefined ? "text-evergreen-800" : "text-neutral-100",
           )}
           displayValue={(value: string | number) => {
             return options.find((option) => option.value === value)?.label || "";
